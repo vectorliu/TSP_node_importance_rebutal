@@ -58,19 +58,21 @@ figure;%Mean of 1000 iterations
 semilogx(precision, mean(MEC, 2), 'r*-', precision, mean(ZEC, 2), 'gs-.', precision, mean(SEC, 2), 'bo-', ...
     precision, mean(DZEC, 2), 'gd-.', precision, mean(DSEC, 2), 'bp-.', 'linewidth', 1.5, 'markersize', 8);
 legend('ME(DME)','ZE','SE','DZE','DSE');
-xlabel('Precision of Fiedler vector');
+xlabel('Precision of Fiedler vector','FontSize',14);
 xlim([10^(-9),10^(0)]);
-ylabel('NRD1 of different methods');
+ylabel('Average NRD1','FontSize',14);
 ylim([-1,16]);
+set(gca,'fontsize',12);
 
 figure;%Plot DSE, with median and quantile
 quan = quantile(DSEC(:,1:k), [.25 .5 .75], 2);
 semilogx(precision, quan(:,1), 'r*-', precision, quan(:,2), 'gs-.', precision, quan(:,3), 'bo--', 'linewidth', 1.5, 'markersize', 8);
 legend('25% quantile', 'median', '75% quantile');
-xlabel('Precision of Fiedler vector');
+xlabel('Precision of Fiedler vector','FontSize',14);
 xlim([10^(-9),10^(0)]);
-ylabel('NRD1 of DSE method');
+ylabel('statistical NRD1','FontSize',14);
 ylim([-0.5, 2.5]);
+set(gca,'fontsize',12);
 
 save('performance_precision.mat', 'ME', 'ZE', 'SE', 'DZE', 'DSE', 'matrixL', 'MEC', 'ZEC', 'SEC','DZEC', 'DSEC', 'theoretical', 'k', 'precision');
 
