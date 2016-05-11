@@ -8,3 +8,7 @@ Mainly to add some results evaluating the precision of Fiedler vector on the eva
 
 ####2. Carry out a simulation to evaluate the impact of precision on the estimation performance, using the NRD1 measurement:
 ######Performance_precision.m
+ 
+
+Reference:
+Hao Liu, Xianghui Cao, Jianping He, Peng Cheng, Jiming Chen, Youxian Sun. Distributed Identification of the Most Critical Node for Average Consensus. *IEEE Transactions on Signal Processing*, vol. 63, no. 16, pp. 4315-4328, Aug. 2015.
