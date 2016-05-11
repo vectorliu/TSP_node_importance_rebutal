@@ -7,4 +7,4 @@ Mainly to add some results evaluating the precision of Fiedler vector on the eva
 ######Fiedler_divergence_random.m
 
 ####2. Carry out a simulation to evaluate the impact of precision on the estimation performance, using the NRD1 measurement:
-#######Performance_precision.m
+######Performance_precision.m
